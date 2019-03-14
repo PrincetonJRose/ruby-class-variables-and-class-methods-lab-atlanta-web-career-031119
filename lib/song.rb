@@ -16,10 +16,7 @@ class Song
   end
 
   attr_accessor :name, :artist, :genre
-
-  def count
-    @@count
-  end
+  attr_reader :count
 
   def genres
     genres = []
