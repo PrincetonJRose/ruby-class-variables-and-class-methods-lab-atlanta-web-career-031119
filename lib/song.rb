@@ -16,9 +16,12 @@ class Song
   end
 
   attr_accessor :name, :artist, :genre
-  attr_reader :count
 
-  def genres
+  def self.count
+    @@count
+  end
+
+  def self.genres
     genres = []
     for item in @@genres
       if genres.include?(item) == false
@@ -28,7 +31,7 @@ class Song
     genres
   end
 
-  def artists
+  def self.artists
     artists = []
     @@artists.each do |item|
       if artists.include?(item) == false
