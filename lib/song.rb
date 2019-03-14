@@ -50,5 +50,5 @@ class Song
     end
     artists
   end
-
+binding.pry
 end
