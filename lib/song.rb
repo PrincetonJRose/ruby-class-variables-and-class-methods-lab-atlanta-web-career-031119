@@ -25,7 +25,7 @@ class Song
 
   def self.genres
     genres = []
-    for item in @@genres
+    @@genres.each do |item|
       if genres.include?(item) == false
         genres << item
       end
