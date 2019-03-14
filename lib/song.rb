@@ -13,7 +13,6 @@ class Song
     @@artists << @artist
     @@genres << @genre
     @@count += 1
-    binding.pry
   end
 
   def count
@@ -34,8 +33,8 @@ class Song
 
   def genres
     genres = []
-    @@genres.each do |item|
-      if genres.include?(item) == faluse
+    for item in @@genres
+      if genres.include?(item) == false
         genres << item
       end
     end
