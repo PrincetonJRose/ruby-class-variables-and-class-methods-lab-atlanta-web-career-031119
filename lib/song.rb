@@ -14,6 +14,10 @@ class Song
     @@genres << @genre
     @@count += 1
   end
+  
+  def count
+    @@count
+  end
 
   def name
     @name
@@ -46,11 +50,5 @@ class Song
     end
     artists
   end
-
-  def count
-    @@count
-  end
-
-
 
 end
