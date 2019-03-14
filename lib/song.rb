@@ -15,20 +15,10 @@ class Song
     @@count += 1
   end
 
+  attr_accessor :name, :artist, :genre
+
   def count
     @@count
-  end
-
-  def name
-    @name
-  end
-
-  def artist
-    @artist
-  end
-
-  def genre
-    @genre
   end
 
   def genres
