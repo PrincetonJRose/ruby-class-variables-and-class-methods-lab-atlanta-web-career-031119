@@ -27,4 +27,24 @@ class Song
     @genre
   end
 
+  def genres
+    genres = []
+    @@genres.each do |item|
+      if genres.include?(item) == faluse
+        genres << item
+      end
+    end
+    genres
+  end
+
+  def artists
+    artists = []
+    @@artists.each do |item|
+      if artists.include?(item) == false
+        artists << item
+      end
+    end
+    artists
+  end
+
 end
